@@ -172,6 +172,7 @@ export const createResidency = async (data) => {
     )
   } catch (err)
   {
+    console.error("Error:", error); // Log the error to the server's console
     throw new Error(err.message)
   }
 }
