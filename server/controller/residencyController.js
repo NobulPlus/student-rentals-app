@@ -1,12 +1,13 @@
 import asyncHandler from 'express-async-handler'
 import { prisma } from '../config/prismaConfig.js'
 
-// create a residence
+// Create a residency
 export const createResidency = asyncHandler(async (req, res) => {
-    const {title, description, price, address, country, city, facilities, image, userEmail} = req.body.data
+    const { title, description, price, address, country, city, facilities, image, userEmail } = req.body.data;
 
-    console.log(req.body.data)
-    try{
+    try {
+        // Perform input validation here (e.g., using Joi or express-validator) to ensure data integrity
+
         const residency = await prisma.residency.create({
             data: {
                 title,
@@ -17,17 +18,19 @@ export const createResidency = asyncHandler(async (req, res) => {
                 city,
                 facilities,
                 image,
-                owner : {connect : {email: userEmail}},
+                owner: {
+                    connect: { email: userEmail }
+                },
             },
         });
 
-        res.send({ message: "Residency created successfully", residency})
-    }catch(err){
-        if(err.code === "P2002")
-        {
-            throw new Error("A residency with address already there")
+        res.status(201).json({ message: "Residency created successfully", residency });
+    } catch (err) {
+        if (err.code === "P2002") {
+            return res.status(400).json({ message: "A residency with the same address already exists" });
         }
-        throw new Error(err.message)
+        console.error("Error:", err);
+        res.status(500).json({ message: "Internal Server Error" });
     }
 });
 
