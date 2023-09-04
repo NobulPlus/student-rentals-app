@@ -65,11 +65,11 @@ export const bookVisit = async (date, propertyId, email) => {
         date: dayjs(date).format("DD/MM/YYYY"),
       }
     );
-  } catch (error) {
+  } catch (err) {
     toast.error("Something went wrong, Please try again");
-    throw error;
   }
-};
+    throw new Error(err.message)
+  }
 
 export const removeBooking = async (id, email, token) => {
   try {
@@ -170,8 +170,8 @@ export const createResidency = async (data) => {
         data
       },
     )
-  }catch(error)
+  } catch (err)
   {
-    throw error
+    throw new Error(err.message)
   }
 }
