@@ -12,7 +12,7 @@ const Contact = () => {
           <span className="orangeText">Our Contact Us</span>
           <span className="primaryText">Easy to contact us</span>
           <span className="secondaryText">
-            We always ready to help by providijng the best services for you. We
+            We always ready to help by providing the best services for you. We
             believe a good place to live can make your life better{" "}
           </span>
 
@@ -29,7 +29,7 @@ const Contact = () => {
                     <span className="secondaryText">+353 0894999394</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Call now</div>
+                <div className="flexCenter button"><a href="tel:+3530894999394">Call now</a></div>
               </div>
 
               <div className="flexColCenter mode">
@@ -42,7 +42,7 @@ const Contact = () => {
                     <span className="secondaryText">+353 0894999394</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Chat now</div>
+                  <div className="flexCenter button"><a href="https://wa.link/2wsait">Chat now</a></div>
               </div>
             </div>
 
@@ -58,7 +58,8 @@ const Contact = () => {
                     <span className="secondaryText">+353 0894999394</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Video Call now</div>
+                <div className="flexCenter button"><a href="facetime:+3530894999394">Video call now</a>
+</div>
               </div>
 
               <div className="flexColCenter mode">
@@ -71,7 +72,7 @@ const Contact = () => {
                     <span className="secondaryText">+353 0894999394</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Message now</div>
+                <div className="flexCenter button"><a href="imessage://34627524218&body=hi">Message now</a></div>
               </div>
             </div>
           </div>
