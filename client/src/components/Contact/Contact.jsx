@@ -48,7 +48,7 @@ const Contact = () => {
 
             {/* second row */}
             <div className="flexStart row">
-              <div className="flexColCenter mode">
+              {/* <div className="flexColCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">
                     <BsFillChatDotsFill size={25} />
@@ -58,11 +58,10 @@ const Contact = () => {
                     <span className="secondaryText">+353 0894999394</span>
                   </div>
                 </div>
-                <div className="flexCenter button"><a href="facetime:+3530894999394">Video call now</a>
-</div>
-              </div>
+                <div className="flexCenter button"><a href="facetime:+3530894999394">Video call now</a></div>
+              </div> */}
 
-              <div className="flexColCenter mode">
+              {/* <div className="flexColCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">
                     <HiChatBubbleBottomCenter size={25} />
@@ -73,7 +72,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="flexCenter button"><a href="imessage://34627524218&body=hi">Message now</a></div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

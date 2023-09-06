@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="flexCenter f-menu">
             <span><NavLink to="/properties">Property</NavLink></span>
             <span>Services</span>
-            <span><NavLink to="/about-us">About Us</NavLink></span>
+            <span><NavLink to="/about">About Us</NavLink></span>
           </div>
         </div>
       </div>
