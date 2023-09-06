@@ -1,6 +1,5 @@
 import React from "react";
 import "./GetStarted.css";
-import { NavLink } from "react-router-dom";
 const GetStarted = () => {
   return (
     <div id="get-started" className="g-wrapper">
@@ -12,9 +11,8 @@ const GetStarted = () => {
             <br />
             Find your residence soon
           </span>
-          <button className="button" href>
-            {/* <NavLink><a href="https://dev-egjd3yez0dphv7cs.us.auth0.com/u/login?state=hKFo2SAyTWpmdzNOLXRxNmVGTDg1XzZES0ItdF9lUWozNEZ5SaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIFNveHo4cVB0bC10NloxVWZlcGd4cnV0aVFfRkpWUUtlo2NpZNkgelNFU0F6TGticDRXM2dGdEIwTFFsZUE2YjZuMFhHeDA">Get Started</a></NavLink> */}
-            <div className="flexCenter button"><a href="imessage://34627524218&body=hi">Message now</a></div>
+          <button className="button" href="{loginWithRedirect">
+            <a href="mailto:rili8704@gmail.com">Get Started</a>
           </button>
         </div>
       </div>
