@@ -11,9 +11,9 @@ const GetStarted = () => {
             <br />
             Find your residence soon
           </span>
-          <button className="button" href="{loginWithRedirect">
-            <a href="mailto:rili8704@gmail.com">Get Started</a>
-          </button>
+          <a className="button" href="/properties">
+            Get Started
+          </a>
         </div>
       </div>
     </div>

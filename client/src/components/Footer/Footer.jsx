@@ -19,7 +19,7 @@ const Footer = () => {
           <span className="secondaryText">Ireland</span>
           <div className="flexCenter f-menu">
             <span><NavLink to="/properties">Property</NavLink></span>
-            <span>Services</span>
+            <span><NavLink to="/services">Services</NavLink></span>
             <span><NavLink to="/about">About Us</NavLink></span>
           </div>
         </div>

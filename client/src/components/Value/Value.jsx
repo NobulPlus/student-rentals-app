@@ -70,7 +70,7 @@ const Value = () => {
                     </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
-                    <p className="secondaryText">{item.detail}</p>
+                    {/* <p className="secondaryText">{item.detail}</p> */}
                   </AccordionItemPanel>
                 </AccordionItem>
               );
